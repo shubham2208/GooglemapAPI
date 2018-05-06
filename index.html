@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="appname" >
+      <h3 class="headerPart">
+         PLACEFINDER
+      </h3>
+    </div>
+    <div class="container-fluid searchingPart">
+    <div class="row">
+            <div class="input col-sm-4">
+              <input type="text" id="search" placeholder = "Search a place"> 
+              <button class="btn btn-search" type="button"><i class="fa fa-search fa-fw"></i> Search</button>
+            </div>
+           <div class="typeList col-sm-4">
+             <select id="opt" onchange="loadOptions('opt')"></select>
+             <button type="button" id="nearBy" class="btn btn-search" onclick="searchNearBy()"> <i class="fa fa-search fa-fw"></i>Search near by </button> 
+            </div>
+      </div>
+    </div>
+            <div id="map-canvas">
+
+            
+      </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVa_fLTgQr3hfCnBJFzfeAqyUWcLj-6B0&libraries=places" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+
+
+  </body>
+</html>
